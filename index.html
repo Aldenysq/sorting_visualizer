@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sorting Visualizer</title>
+	
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+
+
+	<div class="radiogroup">
+  <div class="wrapper">
+    <input class="state disabled" type="radio" name="app" id="a" value="a" onclick="bubbleSort()">
+    <label class="label" for="a">
+      <div class="indicator"></div>
+      <span class="text">Bubble Sort</span>
+    </label>
+  </div>
+  <div class="wrapper">
+    <input class="state" type="radio" name="app" id="b" value="b" onclick="selectionSort()">
+    <label class="label" for="b">
+      <div class="indicator"></div>
+      <span class="text">Selection Sort</span>
+    </label>
+  </div>
+  <div class="wrapper">
+    <input class="state" type="radio" name="app" id="c" value="c" onclick="qSort()">
+    <label class="label" for="c">
+      <div class="indicator"></div>
+      <span class="text">Quick Sort</span>
+    </label>
+  </div>
+  <div class="wrapper">
+    <input class="state" type="radio" name="app" id="d" value="d" onclick="heapSort()">
+    <label class="label" for="d">
+      <div class="indicator"></div>
+      <span class="text">Heap Sort</span>
+    </label>
+  </div>
+
+
+</div>
+
+	<p class="text" id="arsz"> The Size Of The Array </p>
+	<p class="text" id="minel"> Minimum Possible Element </p>
+	<p class="text" id="maxel"> Maximum Possible Element </p>
+	<p class="text" id="sortsp"> Speed Of Sorting </p>
+
+	<div class="range-slider">
+
+  <input class="range-slider__range potential" type="range" value="1" min="1" max="83" id="arraySize">
+  <span class="range-slider__value" id="arraySizeV">0</span>
+</div>
+
+<div class="range-slider">
+  <input class="range-slider__range potential" type="range" value="0" min="0" max="170" id="minimum">
+  <span class="range-slider__value" id="minimumv">0</span>
+</div>
+
+<div class="range-slider">
+  <input class="range-slider__range potential" type="range" value="100" min="1" max="170" id="maximum">
+  <span class="range-slider__value" id="maximumv">0</span>
+</div> 
+
+<div class="range-slider">
+  <input class="range-slider__range" type="range" value="250" min="20" max="280" id="sortSpeed">
+  <span class="range-slider__value" id="sortSpeedV">0</span>
+</div> 
+	
+</div>
+
+
+
+
+
+
+	<div id="area"></div>
+
+</body>
+</html>
+<script src="code.js"></script>
